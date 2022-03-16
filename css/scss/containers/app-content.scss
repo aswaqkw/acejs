@@ -16,7 +16,7 @@
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
+  height: calc(#{smartvh(100)} - #{$ace-main-title-bar-height});
   margin: $meas-marg-50 $meas-marg-0 $meas-marg-0 $meas-marg-0;
   overflow: visible;
 }
@@ -70,7 +70,7 @@
 
 .ace-footer {
   background: $primary-bg-color;
-  height: $ace-standard-bar-height;
+  height: $ace-footer-height;
   width: $meas-full;
   padding: $meas-pad-0 $meas-pad-10;
   position: fixed;

@@ -38,7 +38,18 @@
   --ace-container-default-side-padding: #{$ace-container-default-side-padding};
   --ace-common-top-bottom-padding: #{$ace-common-top-bottom-padding};
   --ace-common-left-right-padding: #{$ace-common-left-right-padding};
+
   --ace-standard-bar-height: #{$ace-standard-bar-height};
+
+  --ace-main-title-bar-height: #{$ace-main-title-bar-height};
+  --ace-tittle-bar-height: #{$ace-tittle-bar-height};
+  --ace-footer-height: #{$ace-footer-height};
+  --ace-horizontal-tabs-height: #{$ace-horizontal-tabs-height};
+  --ace-recaptcha-height: #{$ace-recaptcha-height};
+  --ace-composite-height-main-title-bar-and-normal-title-bar: #{$ace-composite-height-main-title-bar-and-normal-title-bar};
+  --ace-composite-height-normal-title-bar-and-footer: #{$ace-composite-height-normal-title-bar-and-footer};
+  --ace-composite-height-normal-title-bar-and-horizontal-tabs: #{$ace-composite-height-normal-title-bar-and-horizontal-tabs};
+
 
   /*
    * fonts

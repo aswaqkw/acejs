@@ -61,9 +61,28 @@
         $ace-standard-element-size: $meas-34 !default;
         //some elements and sub-elements will have this height or width
         $ace-small-element-size: $meas-25 !default;
-        //title bars, some footbars and other elements are of this standard height
+
+//height measurement
+        //title bars, some footbars and other elements are by default of this standard height
         $ace-standard-bar-height: $meas-50 !default;
-        $ace-standard-bar-double-height: 2 * $meas-50 !default;
+
+        //this is the height of the main APP title-bar: the one that appears on top, all the time:
+        $ace-main-title-bar-height: $ace-standard-bar-height !default;
+        //all title bars, except the main app will have this size:
+        $ace-tittle-bar-height: $ace-standard-bar-height !default;
+        //all footer elements will have this size
+        $ace-footer-height: $ace-standard-bar-height !default;
+        //horizontal tabs height
+        $ace-horizontal-tabs-height: $ace-standard-bar-height !default;
+        //recaptcha size
+        $ace-recaptcha-height: $ace-standard-bar-height !default;
+
+        /*
+         * the composite values MUST NOT be overwritten by themes!
+         */
+        $ace-composite-height-main-title-bar-and-normal-title-bar: $ace-main-title-bar-height + $ace-tittle-bar-height;
+        $ace-composite-height-normal-title-bar-and-footer: $ace-tittle-bar-height + $ace-footer-height;
+        $ace-composite-height-normal-title-bar-and-horizontal-tabs: $ace-tittle-bar-height + $ace-horizontal-tabs-height;
 
 //FONT Measurements
       //Attention: the size of the bellow defined value must in ascending order, if you want to keep a normal-ish aspect of the page

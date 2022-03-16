@@ -40,36 +40,35 @@
 }
 
 .ace-standard-form > .ace-form-container {
-  max-height: calc(#{smartvh(100)} - #{$ace-standard-bar-double-height});
-  height: calc(#{smartvh(100)} - #{$ace-standard-bar-double-height});
-  /*overflow-y: hidden;*//*SM-not sure*/
+  max-height: calc(#{smartvh(100)} - #{$ace-composite-height-main-title-bar-and-normal-title-bar});
+  height: calc(#{smartvh(100)} - #{$ace-composite-height-main-title-bar-and-normal-title-bar});
 }
 .ace-standard-form > .ace-form-container > .ace-form-inner {
-  max-height: calc(#{smartvh(100)} - #{$ace-standard-bar-double-height});
-  height: calc(#{smartvh(100)} - #{$ace-standard-bar-double-height});
+  max-height: calc(#{smartvh(100)} - #{$ace-composite-height-main-title-bar-and-normal-title-bar});
+  height: calc(#{smartvh(100)} - #{$ace-composite-height-main-title-bar-and-normal-title-bar});
   overflow-y: auto;
 }
 .ace-no-top-bar .ace-standard-form > .ace-form-container,
 .ace-full-screen-popup.ace-standard-form > .ace-form-container {
-  max-height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
-  height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
+  max-height: calc(#{smartvh(100)} - #{$ace-tittle-bar-height});
+  height: calc(#{smartvh(100)} - #{$ace-tittle-bar-height});
   /*overflow-y: hidden;*//*SM-not sure*/
 }
 .ace-no-top-bar .ace-standard-form > .ace-form-container > .ace-form-inner,
 .ace-full-screen-popup.ace-standard-form > .ace-form-container > .ace-form-inner{
-  max-height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
-  height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
+  max-height: calc(#{smartvh(100)} - #{$ace-tittle-bar-height});
+  height: calc(#{smartvh(100)} - #{$ace-tittle-bar-height});
   overflow-y: auto;
 }
 
 .ace-standard-form.ace-standard-form-no-external-title > .ace-form-container {
-  max-height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
-  height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
+  max-height: calc(#{smartvh(100)} - #{$ace-main-title-bar-height});
+  height: calc(#{smartvh(100)} - #{$ace-main-title-bar-height});
   /*overflow-y: hidden;*//*SM-not sure*/
 }
 .ace-standard-form.ace-standard-form-no-external-title > .ace-form-container > .ace-form-inner {
-  max-height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
-  height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
+  max-height: calc(#{smartvh(100)} - #{$ace-main-title-bar-height});
+  height: calc(#{smartvh(100)} - #{$ace-main-title-bar-height});
   overflow-y: auto;
 }
 .ace-no-top-bar .ace-standard-form.ace-standard-form-no-external-title > .ace-form-container,
@@ -104,23 +103,23 @@
 .ace-standard-form-inside-with-footer,
 .ace-standard-form-inside-with-mobile-title-and-footer,
 .ace-standard-form-inside-with-mobile-title-and-footer-desktop-only{
-  height: calc(#{$meas-full} - #{$ace-standard-bar-height});
+  height: calc(#{$meas-full} - #{$ace-footer-height});
   padding-top: $ace-common-top-bottom-padding;
 }
 @media screen and (min-width: $screen-small) and (max-width: $screen-medium), screen and (min-device-width: $screen-small) and (max-device-height: $screen-medium) and (orientation: landscape) {
   .ace-standard-form-inside-with-mobile-title-and-footer {
-    height: calc(#{$meas-full} - #{$ace-standard-bar-double-height});
+    height: calc(#{$meas-full} - #{$ace-composite-height-normal-title-bar-and-footer});
   }
 }
 
 .ace-standard-form-inside-with-title-and-footer,
 .ace-standard-form-inside-with-title-and-footer-desktop-only{
-  height: calc(#{$meas-full} - #{$ace-standard-bar-double-height});
+  height: calc(#{$meas-full} - #{$ace-composite-height-normal-title-bar-and-footer});
   padding-top: $ace-common-top-bottom-padding;
 }
 @media screen and (min-width: $screen-small) and (max-width: $screen-medium), screen and (min-device-width: $screen-small) and (max-device-height: $screen-medium) and (orientation: landscape) {
   .ace-standard-form-inside-with-title-and-footer-desktop-only {
-    height: calc(#{$meas-full} - #{$ace-standard-bar-height});
+    height: calc(#{$meas-full} - #{$ace-tittle-bar-height});
   }
 }
 
@@ -128,7 +127,7 @@
 .ace-standard-form-footer-desktop-only {
   position: absolute;
   bottom: $meas-0;
-  height: $ace-standard-bar-height;
+  height: $ace-footer-height;
   display: flex;
   justify-content: center;
   width: $meas-full;

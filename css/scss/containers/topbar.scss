@@ -3,7 +3,7 @@
 
 .ace-main-nav {
   background: $primary-bg-color;
-  height: $ace-standard-bar-height;
+  height: $ace-main-title-bar-height;
   width: $meas-full;
   box-shadow: $box-shad-0 $box-shad-1 $box-shad-2 $titlebar-shadow-color;
   position: fixed;
@@ -19,7 +19,7 @@
 
 .ace-main-nav .ace-logo {
   width: $meas-70;
-  height: $ace-standard-bar-height;
+  height: $ace-main-title-bar-height;
   background-size: cover;
   margin: $meas-marg-13;
 }

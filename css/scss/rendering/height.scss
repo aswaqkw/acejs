@@ -271,4 +271,11 @@
   height: $meas-full;
 }
 
+.ace-height-minus-titlebar-and-tabs {
+  height: calc(#{$meas-full} - #{$ace-composite-height-normal-title-bar-and-horizontal-tabs});
+}
+.ace-height-minus-normal-titlebar {
+  height: calc(#{$meas-full} - #{$ace-tittle-bar-height});
+}
+
 /* end height classes */

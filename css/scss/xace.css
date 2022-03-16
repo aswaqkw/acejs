@@ -448,6 +448,9 @@ box-shaddow
 */
 /* Used for
 */
+/*
+ * the composite values MUST NOT be overwritten by themes!
+ */
 /* begin colors */
 .ace-primary-color,
 .ace-primary-color input,
@@ -12510,6 +12513,14 @@ html[dir=rtl] .ace-right-float {
   height: 100%;
 }
 
+.ace-height-minus-titlebar-and-tabs {
+  height: calc(100% - 100px);
+}
+
+.ace-height-minus-normal-titlebar {
+  height: calc(100% - 50px);
+}
+
 /* end height classes */
 /* begin utility classes */
 .ace-no-after:after {
@@ -12926,8 +12937,6 @@ html[dir=rtl] .ace-presentation-main > .ace-standard-form.ace-field-container {
 .ace-standard-form > .ace-form-container {
   max-height: calc(calc(var(--vh, 1vh) * 100) - 100px);
   height: calc(calc(var(--vh, 1vh) * 100) - 100px);
-  /*overflow-y: hidden;*/
-  /*SM-not sure*/
 }
 
 .ace-standard-form > .ace-form-container > .ace-form-inner {
@@ -13183,6 +13192,14 @@ div.ace-mobile-title-bar {
   --ace-common-top-bottom-padding: 8px;
   --ace-common-left-right-padding: 10px;
   --ace-standard-bar-height: 50px;
+  --ace-main-title-bar-height: 50px;
+  --ace-tittle-bar-height: 50px;
+  --ace-footer-height: 50px;
+  --ace-horizontal-tabs-height: 50px;
+  --ace-recaptcha-height: 50px;
+  --ace-composite-height-main-title-bar-and-normal-title-bar: 100px;
+  --ace-composite-height-normal-title-bar-and-footer: 100px;
+  --ace-composite-height-normal-title-bar-and-horizontal-tabs: 100px;
   /*
    * fonts
    */

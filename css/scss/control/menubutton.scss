@@ -74,7 +74,7 @@
 @include sideMarginLTR('.ace-dropdown-list a i',right,$meas-marg-5);
 
 .ace-main-nav .ace-dropdown-trigger-click {
-  height: $ace-standard-bar-height;
+  height: $ace-main-title-bar-height;
 }
 @include floatToLTR('.ace-right .ace-dropdown-list ul li',left);
 

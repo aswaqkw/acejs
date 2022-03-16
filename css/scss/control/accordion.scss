@@ -126,7 +126,7 @@
   width: $meas-full;
   padding-top: $meas-pad-0;
   padding-bottom: $meas-pad-0;
-  height: $ace-standard-bar-height;
+  height: $ace-horizontal-tabs-height;
 }
 @include floatToLTR('.ace-submenu.ace-horizontal-tabs',left);
 

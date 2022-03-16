@@ -19,8 +19,8 @@
   cursor: pointer;
   text-align: center;
   padding: $meas-pad-13 $meas-pad-20 $meas-pad-13;
-  height: $ace-standard-bar-height;
-  width: $ace-standard-bar-height;/*yes, same as height by default */
+  height: $ace-main-title-bar-height;
+  width: $ace-main-title-bar-height;/*yes, same as height by default */
   font-size: 14pt !important;
   color: $side-menu-trigger-color;
   background-color: $side-menu-trigger-bg-color;

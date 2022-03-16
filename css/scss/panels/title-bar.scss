@@ -3,7 +3,7 @@
 
 .ace-title-bar {
   width: $meas-full;
-  height: $ace-standard-bar-height;
+  height: $ace-tittle-bar-height;
   background: $primary-bg-color;
   position: relative;
   display: flex;
@@ -40,7 +40,7 @@ html[dir="rtl"] .ace-title-bar {
 
 .ace-transparent-title-bar {
   background: $primary-bg-color;
-  height: $ace-standard-bar-height;
+  height: $ace-tittle-bar-height;
   box-shadow: $box-shad-0 $box-shad-0 $titlebar-shadow-color;
   padding: $ace-common-top-bottom-padding $ace-common-left-right-padding;
   position: relative;

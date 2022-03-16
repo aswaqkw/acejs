@@ -3,15 +3,15 @@
 
 .ace-presentation-container .ace-side-container {
   position: initial;
-  height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
+  height: calc(#{smartvh(100)} - #{$ace-main-title-bar-height});
 }
 .ace-no-top-bar .ace-presentation-container .ace-side-container {
   height: $meas-full;
 }
 
 .ace-main-presentation {
-  margin: $meas-marg-50 $meas-marg-0 $meas-marg-0 $meas-marg-0;
-  height: calc(#{smartvh(100)} - #{$ace-standard-bar-height});
+  margin: $ace-main-title-bar-height $meas-marg-0 $meas-marg-0 $meas-marg-0;
+  height: calc(#{smartvh(100)} - #{$ace-main-title-bar-height});
 }
 @include sidePaddingLTR('.ace-main-presentation',left,$meas-pad-0);
 
