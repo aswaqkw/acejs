@@ -288,6 +288,7 @@
             editIcon2 : 'fa fa-pencil-square-o',
             trashIcon : 'fa fa-trash',
             calendarIcon : 'fal fa-calendar',
+            calendarIconOld : 'fa fa-calendar',
             uploadIcon : 'fa fa-upload',
             nextIcon : 'fa fa-angle-right',
             prevIcon : 'fa fa-angle-left',
@@ -8446,7 +8447,7 @@
                         changeMonth		: true,
                         changeYear		: true,
                         yearRange		: "-100:+100",
-                        buttonText		: '<i class="'+$.aceOverWatch.classes.calendarIcon+'"></i>',
+                        buttonText		: '<i class="'+($.aceOverWatch.settings.usingNewCSSVersion ? $.aceOverWatch.classes.calendarIcon : $.aceOverWatch.classes.calendarIconOld)+'"></i>',
                         nextText		: '<i class="'+$.aceOverWatch.classes.nextIcon+'"></i>',
                         prevText		: '<i class="'+$.aceOverWatch.classes.prevIcon+'"></i>',
                         dayNamesMin		: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
@@ -12878,8 +12879,8 @@
                         hidesorticonuntilfirstclick : true,
 
                         sortdir : '', //should be '', asc or desc - for '' the sort icon is hidden
-                        sortasciconcls : 'fa-caret-up',
-                        sortdesciconcls : 'fa-caret-down',
+                        sortasciconcls : 'fa fa-caret-up',
+                        sortdesciconcls : 'fa fa-caret-down',
 
                         /*
                          * used to display the totals of a column
